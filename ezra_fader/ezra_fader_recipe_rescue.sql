@@ -48,6 +48,6 @@ VALUES (5, "Olive Oil", "Cooking Oil", true, true, true, 25); -- bertolli olive 
 -- we can change the ids later, just using them as placeholder
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 1, 1.28); -- walmart, roma tomatoes
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 2, 4.98); -- walmart, tillamook cheddar cheese 8oz
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (2, 4, 3.49); -- albertson, crimini mushrooms 8oz
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (2, 5, 13.99); -- albertson, olive oil 25 oz bertolli
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 4, 3.49); -- albertson, crimini mushrooms 8oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 5, 13.99); -- albertson, olive oil 25 oz bertolli
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 5, 16.99); -- walmart, olive oil 25 oz bertolli
