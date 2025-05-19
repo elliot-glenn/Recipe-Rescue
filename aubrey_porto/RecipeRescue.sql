@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS utensil;
-DROP TABLE IF EXISTS recipe;
-DROP TABLE IF EXISTS uten_recipe;
+-- DROP TABLE IF EXISTS utensil;
+-- DROP TABLE IF EXISTS recipe;
+-- DROP TABLE IF EXISTS uten_recipe;
 
 use usr_portoa_0;
 
@@ -135,7 +135,7 @@ Cooking:
 - Caramelise noodles: Return wok to stove, heat 2 tbsp oil over high heat until it starts smoking (HOT is key!). Add noodles and Sauce. Toss as few times as possible to disperse Sauce and make edges of noodles caramelise – about 1 to 1 1/2 minutes.
 - Add chicken back in: Quickly add chicken and veg back in, and toss to disperse. Serve immediately!', 2);
 
-/* chocolate chip cookies recipe refference: https://www.recipetineats.com/the-chocolate-chip-cookies-of-my-dreams/*/
+/* chocolate chip cookies recipe refference: https://www.recipetineats.com/the-chocolate-chip-cookies-of-my-dreams*/
 
 INSERT INTO recipe
 VALUES (000002, 'Chocolate Chip Cookies', 20, 
@@ -157,7 +157,7 @@ BAKING:
 - Tip: While hot, you can also reshape with a rubber spatula or similar into a tidy round shape.
 - Grab now – peak eating moment! Or, transfer to a rack to cool fully before storing in an airtight container.', 8);
 
-/*Tzatziki Chickpea Salad recipe refference: https://www.recipetineats.com/tzatziki-chickpea-salad/*/
+/*Tzatziki Chickpea Salad recipe refference: https://www.recipetineats.com/tzatziki-chickpea-salad*/
 
 INSERT INTO recipe
 VALUES (000003, 'Tzatziki Chickpea Salad', 72,
