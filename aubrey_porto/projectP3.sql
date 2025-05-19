@@ -113,7 +113,7 @@ Assembly & Baking:
 - Brush edge of pots with egg. Top with puff pastry, folding down the edges.
 - Brush pastry with egg. Cut a 2cm / 2/3″ slide in the middle with a small knife.
 - Bake 35 – 40 minutes until deep golden.
-- Serve immediately!');
+- Serve immediately!', 4);
 
 /*Pad See Ew refference recipe: https://www.recipetineats.com/thai-stir-fried-noodles-pad-see-ew/#h-pad-see-ew*/
 
@@ -131,7 +131,7 @@ Cooking:
 - Scramble egg: Push everything to one side, crack egg in and scramble.
 - REMOVE chicken from wok: Remove everything in the wok onto a plate (scrape wok clean).
 - Caramelise noodles: Return wok to stove, heat 2 tbsp oil over high heat until it starts smoking (HOT is key!). Add noodles and Sauce. Toss as few times as possible to disperse Sauce and make edges of noodles caramelise – about 1 to 1 1/2 minutes.
-- Add chicken back in: Quickly add chicken and veg back in, and toss to disperse. Serve immediately!');
+- Add chicken back in: Quickly add chicken and veg back in, and toss to disperse. Serve immediately!', 2);
 
 /* chocolate chip cookies recipe refference: https://www.recipetineats.com/the-chocolate-chip-cookies-of-my-dreams/*/
 
@@ -153,7 +153,7 @@ BAKING:
 - Bake for 17 minutes or until the edges are golden and the surface is just set (ie not melty raw dough) but still pale.
 - Decorate and cool – Working quickly, press extra choc chips on the surface, then cool on the tray for 20 minutes – finishes baking, edges crisp more and they get more golden all over.
 - Tip: While hot, you can also reshape with a rubber spatula or similar into a tidy round shape.
-- Grab now – peak eating moment! Or, transfer to a rack to cool fully before storing in an airtight container.');
+- Grab now – peak eating moment! Or, transfer to a rack to cool fully before storing in an airtight container.', 8);
 
 /*Tzatziki Chickpea Salad recipe refference: https://www.recipetineats.com/tzatziki-chickpea-salad/*/
 
@@ -161,7 +161,7 @@ INSERT INTO recipe
 VALUES (000003, 'Tzatziki Chickpea Salad', 72,
 '- Mix – Put the Tzatziki ingredients in a big bowl and mix. Add the chickpeas, celery and capers, mix again.
 - Wait 1 hour – You can eat it straight away but its better if you can set aside for at least 1 hour to let the flavours meld (especially salt from capers & the garlic). Its even better the next day. Give it a taste and add a pinch of extra salt if needed (capers saltiness can differ).
-- Serve drizzled with extra olive oil and extra dill. Dive in!');
+- Serve drizzled with extra olive oil and extra dill. Dive in!', 4);
 
 /*Crispy Potato Straws recipe refference: https://www.recipetineats.com/crispy-potato-straws-pommes-paille/#wprm-recipe-container-147762*/
 
@@ -174,7 +174,7 @@ VALUES (000004, 'Crispy Potato Straws', 10,
 - Add potato into oil – SLOWLY scatter potato across the surface of the oil (dont dump in once place). ⚠️The oil will bubble up to ~7cm/3", so add potato slowly, and you can pause until the bubbles subside before adding more.
 - Fry for 1 1/2 – 2 minutes, using chopsticks (or similar) to stir once or twice. Once light golden and crisp, scoop out and drain on paper towels. (It goes more golden as it drains). Repeat with remaining potato.
 - Season – Carefully slide the fries into a bowl. Sprinkle with salt and gently toss. Serve immediately while warm, or cool.
-- Serve in bowls for munching, as a garnish like for Beef Tataki or serve a mound alongside a juicy steak or other protein.');
+- Serve in bowls for munching, as a garnish like for Beef Tataki or serve a mound alongside a juicy steak or other protein.', 1);
 
 -- utensil recipe inserts
 
