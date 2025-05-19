@@ -1,9 +1,9 @@
 USE usr_fadere_1;
 
-DROP TABLE ingredient;
-DROP TABLE store_ingr;
-DELETE FROM store_ingr WHERE store_id >= 0;
-DELETE FROM ingredient WHERE ing_id >= 0;
+-- DROP TABLE ingredient;
+-- DROP TABLE store_ingr;
+-- DELETE FROM store_ingr WHERE store_id >= 0;
+-- DELETE FROM ingredient WHERE ing_id >= 0;
 
 -- create ingredient table
 CREATE TABLE ingredient 
