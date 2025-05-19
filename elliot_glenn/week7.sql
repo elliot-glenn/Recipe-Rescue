@@ -89,38 +89,36 @@ VALUES (000003, 'WinCo Foods', 251, 'E Barnett Rd', 'Medford');
 INSERT INTO store 
 VALUES (000004, 'Asia Market', 229, 'E Barnett Rd', 'Medford');
 
-    --store_uten table *NEED UTENSIL VALUES TO FINISH*
-/*
+    --store_uten table
 
 INSERT INTO store_uten
-VALUES (000000,   , 00.00);
+VALUES (000000, 000003, 3.99);
 
 INSERT INTO store_uten
-VALUES (000001,   , 00.00);
+VALUES (000001, 000000, 30.49);
 
 INSERT INTO store_uten
-VALUES (000002,   , 00.00);
+VALUES (000002, 000001, 5.50);
 
 INSERT INTO store_uten
-VALUES (000003,   , 00.00);
+VALUES (000003, 000006, 7.20);
 
 INSERT INTO store_uten
-VALUES (000004,   , 00.00);
+VALUES (000005, 000009, 7.97);
 
-    --ingr_recipe table *NEED RECIPE VALUES TO FINISH*
-
-INSERT INTO ingr_recipe
-VALUES (000000,   , 00.00);
+    --ingr_recipe table 
 
 INSERT INTO ingr_recipe
-VALUES (000001,   , 00.00);
+VALUES (3, 000001, 0.53);
 
 INSERT INTO ingr_recipe
-VALUES (000002,   , 00.00);
+VALUES (5, 000003, 0.083);
 
 INSERT INTO ingr_recipe
-VALUES (000003,   , 00.00);
+VALUES (7, 000000, 8);
 
 INSERT INTO ingr_recipe
-VALUES (000004,   , 00.00);
-*/
+VALUES ();
+
+INSERT INTO ingr_recipe
+VALUES ();
