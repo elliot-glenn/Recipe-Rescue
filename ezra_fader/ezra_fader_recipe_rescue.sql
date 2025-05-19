@@ -2,6 +2,8 @@ USE usr_fadere_1;
 
 DROP TABLE ingredient;
 DROP TABLE store_ingr;
+DELETE FROM store_ingr WHERE store_id >= 0;
+DELETE FROM ingredient WHERE ing_id >= 0;
 
 -- create ingredient table
 CREATE TABLE ingredient 
@@ -43,11 +45,38 @@ INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetari
 VALUES (4, "Crimini Mushroom", "Produce", true, true, true, 8); -- o organics baby bella reference; roughly $0.44 per ounce from albertsons
 INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit) 
 VALUES (5, "Olive Oil", "Cooking Oil", true, true, true, 25); -- bertolli olive oil reference, $14 at walmart
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (6, "Angel Hair Pasta", "Pasta", true, false, true, 16); -- de cecco pasta no.9 angel hair
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (7, "Chicken", "Meat", false, true, false, 32); -- 2 lbs of skinless chicken breast
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (8, "Almond Milk", "Dairy", true, false, true, 64); -- 64 oz of silk almond milk
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (9, "Whole Milk", "Dairy", false, true, true, 52); -- 52 oz of whole milk from fairlife
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (10, "Chicken Broth", "Soups", false, true, false, 32); -- 32 oz of broth chicken o organics
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (11, "Vegetable Stock Powder", "Seasoning", true, true, true, 5.9) -- 5.9 oz of massal vegetable bouillon powder
+
 
 -- store ingredient bridge table 
 -- we can change the ids later, just using them as placeholder
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 1, 1.28); -- walmart, roma tomatoes
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 2, 4.98); -- walmart, tillamook cheddar cheese 8oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 1, 1.28); -- walmart, roma tomatoes
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 2, 4.98); -- walmart, tillamook cheddar cheese 8oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 4, 3.49); -- albertson, crimini mushrooms 8oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 5, 13.99); -- albertson, olive oil 25 oz bertolli
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (1, 5, 16.99); -- walmart, olive oil 25 oz bertolli
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 5, 16.99); -- walmart, olive oil 25 oz bertolli
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 6, 3.99); -- albertsons, angel hair de cecco 16 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 7, 7.98); -- albertsons, chicken breast 32 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 8, 3.99); -- albertsons, silk almond milk 64 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 9, 4.99); -- albertsons, whole milk 52 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 10, 2.99); -- albertsons, chicken broth 32 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (5, 11, 7.99); -- amazon, chicken broth 32 oz
+
+
+
+
+
+-- check the tables
+SELECT * FROM ingredient;
+SELECT * FROM store_ingr;
