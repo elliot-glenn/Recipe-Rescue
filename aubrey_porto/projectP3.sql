@@ -12,8 +12,9 @@ CREATE TABLE utensil(
 CREATE TABLE recipe(
 	recipe_id INT(6) NOT NULL,
 	recipe_name VARCHAR(30) NOT NULL,
-    cook_time time NOT NULL,
-    instructions mediumtext NOT NULL
+    cook_time int NOT NULL,
+    instructions mediumtext NOT NULL,
+    serving_size int(2)
 );
 
 /* the long strings coppied from the recipe website didnt work correctly, i think special characters were making things weird so convert character set to utf8*/
