@@ -199,7 +199,7 @@ SELECT * FROM utensil;
 SELECT * FROM recipe;
 SELECT * FROM uten_recipe;
 
--- Ezra part
+-- Ezra's part
 
 USE usr_fadere_1;
 
@@ -285,7 +285,7 @@ SELECT * FROM ingredient;
 SELECT * FROM store_ingr;
 
 
--- Elliots part
+-- Elliot's part
 
 /* 
 
