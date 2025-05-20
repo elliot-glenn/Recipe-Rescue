@@ -165,44 +165,44 @@ VALUES (9, "Whole Milk", "Dairy", false, true, true, 52); -- 52 oz of whole milk
 INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
 VALUES (10, "Chicken Broth", "Soups", false, true, false, 32); -- 32 oz of broth chicken o organics
 INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
-VALUES (11, "Vegetable Stock Powder", "Seasoning", true, true, true, 5.9) -- 5.9 oz of massal vegetable bouillon powder
+VALUES (11, "Vegetable Stock Powder", "Seasoning", true, true, true, 5.9); -- 5.9 oz of massal vegetable bouillon powder
 
 -- Store table entries
-INSERT INTO store 
+INSERT INTO store
 VALUES (00000, 'Albertsons', 2301, 'Ashland St', 'Ashland');
-INSERT INTO store 
+INSERT INTO store
 VALUES (00001, 'Ashland''s Own Shop''n Kart', 2268, 'Ashland St', 'Ashland');
-INSERT INTO store 
+INSERT INTO store
 VALUES (00002, 'Market of Choice Ashland', 1475, 'Siskiyou Blvd', 'Ashland');
 INSERT INTO store 
 VALUES (00003, 'WinCo Foods', 251, 'E Barnett Rd', 'Medford');
 INSERT INTO store 
 VALUES (00004, 'Asia Market', 229, 'E Barnett Rd', 'Medford');
-INSERT INTO store
+INSERT INTO store 
 VALUES (00005, 'Amazon', NULL, NULL, NULL);
 INSERT INTO store
 VALUES (00006, 'Walmart', 1360, 'Center Dr', 'Medford');
 
 -- Utensil Entries
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00000, 'Knife');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00001, 'Measuring Cups');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00002, 'Small bowl');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00003, 'Medium Bowl');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00004, 'Large Bowl');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00005, 'Spatula');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00006, 'Whisk');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00007, 'Tongs');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00008, 'Cutting Board');
-INSERT INTO utensil
+INSERT INTO utensil (uten_id, uten_name)
 VALUES (00009, 'Thermometer');
 
 
@@ -331,6 +331,7 @@ VALUES (7, 000000, 8);
 VALUES ();
 INSERT INTO ingr_recipe
 VALUES ();*/
+
 
 -- store_ingr table entries
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 1, 1.28); -- walmart, roma tomatoes
