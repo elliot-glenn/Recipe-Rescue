@@ -1,9 +1,10 @@
 USE usr_fadere_1;
 
--- DROP TABLE ingredient;
--- DROP TABLE store_ingr;
--- DELETE FROM store_ingr WHERE store_id >= 0;
--- DELETE FROM ingredient WHERE ing_id >= 0;
+DROP TABLE IF EXISTS store_ingr;
+DROP TABLE IF EXISTS ingredient;
+--DELETE FROM store_ingr WHERE store_id >= 0;
+--DELETE FROM ingredient WHERE ing_id >= 0;
+
 
 -- create ingredient table
 CREATE TABLE ingredient 
@@ -17,21 +18,23 @@ CREATE TABLE ingredient
     oz_per_unit DOUBLE -- ounces per unit
 );
 
+
 -- store and ingredient bridge table
 CREATE TABLE store_ingr
 (
 	store_id INT(5), -- fk from the store table
     ing_id INT(5), -- fk from the ingredient table
-    ing_price DOUBLE -- price of the ingredient, per unit
+    ing_price DECIMAL(6, 2) -- price of the ingredient, per unit
 );
+
 
 -- Ingredient primary key(s)
 ALTER TABLE ingredient ADD CONSTRAINT ing_pk PRIMARY KEY (ing_id);
 
 -- Add store ingredient bridge table foreign keys and primary keys
 ALTER TABLE store_ingr ADD CONSTRAINT store_ingr_pk PRIMARY KEY (store_id, ing_id);
-ALTER TABLE store_ingr ADD CONSTRAINT store_fk FOREIGN KEY (store_id) REFERENCES store (store_id); -- store id fk
-ALTER TABLE store_ingr ADD CONSTRAINT ing_pk FOREIGN KEY (ing_id) REFERENCES ingredient (ing_id); -- ingredient id fk
+ALTER TABLE store_ingr ADD CONSTRAINT store_fk FOREIGN KEY (store_id) REFERENCES store(store_id); -- store id fk
+ALTER TABLE store_ingr ADD CONSTRAINT ing_pk FOREIGN KEY (ing_id) REFERENCES ingredient(ing_id); -- ingredient id fk
 
 
 -- ingredient table rows/entries
@@ -72,9 +75,6 @@ INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 8, 3.99); -- alb
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 9, 4.99); -- albertsons, whole milk 52 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 10, 2.99); -- albertsons, chicken broth 32 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (5, 11, 7.99); -- amazon, chicken broth 32 oz
-
-
-
 
 
 -- check the tables
