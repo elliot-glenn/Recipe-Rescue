@@ -345,3 +345,16 @@ INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 8, 3.99); -- alb
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 9, 4.99); -- albertsons, whole milk 52 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 10, 2.99); -- albertsons, chicken broth 32 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (5, 11, 7.99); -- amazon, chicken broth 32 oz
+
+
+
+-- Select from table to double check them, or just look at them
+SELECT * FROM ingredient;
+SELECT * FROM store;
+SELECT * FROM recipe;
+SELECT * FROM utensil;
+
+SELECT * FROM store_uten;
+SELECT * FROM store_ingr;
+SELECT * FROM ingr_recipe;
+SELECT * FROM uten_recipe;
