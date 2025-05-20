@@ -319,6 +319,10 @@ INSERT INTO store_uten
 VALUES (000003, 000006, 7.20);
 INSERT INTO store_uten
 VALUES (000005, 000009, 7.97);
+INSERT INTO store_uten
+VALUES (000005, 000006, 7.60);
+INSERT INTO store_uten
+VALUES (000000, 000001, 4.25);
 
 --ingr_recipe table entries
 INSERT INTO ingr_recipe
