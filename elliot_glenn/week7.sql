@@ -1,11 +1,3 @@
-/* 
-
-DISCLAIMER!!
-
-I have not gotten around to testing these yet, so I may have gotten some stuff wrong. Will be fixing soon
-
-*/
-
 --drop tables
 DROP TABLE IF EXISTS store_uten;
 DROP TABLE IF EXISTS ingr_recipe;
@@ -118,7 +110,7 @@ INSERT INTO ingr_recipe
 VALUES (7, 000000, 8);
 
 INSERT INTO ingr_recipe
-VALUES ();
+VALUES (11, 000000, 0.333333);
 
 INSERT INTO ingr_recipe
-VALUES ();
+VALUES (9, 000000, 16);

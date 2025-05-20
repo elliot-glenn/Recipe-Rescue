@@ -327,10 +327,10 @@ INSERT INTO ingr_recipe
 VALUES (5, 000003, 0.083);
 INSERT INTO ingr_recipe
 VALUES (7, 000000, 8);
-/*INSERT INTO ingr_recipe
-VALUES ();
 INSERT INTO ingr_recipe
-VALUES ();*/
+VALUES (11, 000000, 0.333333);
+INSERT INTO ingr_recipe
+VALUES (9, 000000, 16);
 
 -- store_ingr table entries
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 1, 1.28); -- walmart, roma tomatoes
