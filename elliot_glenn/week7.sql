@@ -85,18 +85,18 @@ VALUES (000004, 'Asia Market', 229, 'E Barnett Rd', 'Medford');
 
 INSERT INTO store_uten
 VALUES (000000, 000003, 3.99);
-
 INSERT INTO store_uten
 VALUES (000001, 000000, 30.49);
-
 INSERT INTO store_uten
 VALUES (000002, 000001, 5.50);
-
 INSERT INTO store_uten
 VALUES (000003, 000006, 7.20);
-
 INSERT INTO store_uten
 VALUES (000005, 000009, 7.97);
+INSERT INTO store_uten
+VALUES (000005, 000006, 7.60);
+INSERT INTO store_uten
+VALUES (000000, 000001, 4.25);
 
     --ingr_recipe table 
 
