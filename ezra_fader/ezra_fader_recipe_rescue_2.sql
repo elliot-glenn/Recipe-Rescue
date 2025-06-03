@@ -28,3 +28,14 @@ FROM ingredient i1 JOIN store_ingr USING (ing_id) JOIN store USING (store_id) WH
 SELECT dep_name, ing_name, ing_price, store_name FROM store_ingr JOIN ingredient USING (ing_id) JOIN store USING (store_id);
 
 -- VIEW
+CREATE VIEW v_store AS (SELECT store_name AS 'Store', IFNULL(city, 'Online') AS 'City' FROM store);
+SELECT * FROM v_store;
+
+-- BUILT IN
+SELECT ing_name AS 'Ingredient starting with C' FROM ingredient WHERE LOWER(LEFT(ing_name, 1)) = 'c';
+
+-- RELATIONAL SET
+SELECT COUNT(item) AS 'Total Items' FROM
+((SELECT ing_id AS item FROM ingredient)
+UNION ALL
+(SELECT uten_id AS item FROM utensil)) total_item;
