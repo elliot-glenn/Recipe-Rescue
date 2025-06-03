@@ -29,6 +29,7 @@ VALUES (12, "Yellow Onion", "Produce", true, true, true, 12.7); -- onion from wa
 ----------------------------------------
 INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (3, 1, 0.4); -- Garlic into Pad See Ew, ~0.4 ounces 2 cloves of garlic
 INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (10, 0, 0.34); -- Chicken broth into Chicken Pot Pie ~0.34 ounces
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (12, 0, 12.7); -- whole onion in chicken pot pie
 
 
 ----------------------------------------

@@ -6,10 +6,25 @@ SELECT ing_name AS 'Ingredient Name', dep_name AS 'Food Department' FROM ingredi
 
 -- DELETE TASK
 DELETE FROM store_uten WHERE store_id = 5 AND uten_id = 0;
-SELECT uten_name, store_name FROM store_uten JOIN utensil USING(uten_id) JOIN store USING(store_id) WHERE store_name = 'Amazon';
+SELECT uten_name AS 'Utensil', store_name AS 'Store' FROM store_uten JOIN utensil USING(uten_id) JOIN store USING(store_id) WHERE store_name = 'Amazon';
 
 -- JOIN
-
+SELECT uten_name AS 'Utensil', recipe_name AS 'Recipe' FROM uten_recipe JOIN utensil USING(uten_id) JOIN recipe USING (recipe_id) WHERE recipe_name = 'Pad See Ew';
 
 -- LEFT JOIN
-SELECT ing_name FROM recipe LEFT JOIN ingr_recipe USING (recipe_id) LEFT JOIN ingredient USING(ing_id) WHERE recipe_name = 'Chicken Pot Pie';
+SELECT ing_name AS 'Ingredient' FROM recipe LEFT JOIN ingr_recipe USING (recipe_id) LEFT JOIN ingredient USING(ing_id) WHERE recipe_name = 'Chicken Pot Pie';
+
+-- GROUP BY
+SELECT store_name AS 'Store', count(ing_id) AS 'Food Sold' FROM store_ingr JOIN store USING(store_id) JOIN ingredient USING(ing_id) GROUP BY store_id;
+
+-- SUBQUERY
+SELECT count(ing_id) AS 'Ingredients sold in Medford stores' FROM store_ingr WHERE store_id IN (SELECT store_id FROM store WHERE city = 'Medford');
+
+-- CORRO SUBQUERY
+SELECT ing_name AS 'Ingredient', ing_price AS 'Price', store_name AS 'Store', dep_name AS 'Department' 
+FROM ingredient i1 JOIN store_ingr USING (ing_id) JOIN store USING (store_id) WHERE ing_price = 
+(SELECT MIN(ing_price) AS ing_price FROM ingredient i2 JOIN store_ingr USING (ing_id) JOIN store USING (store_id) WHERE i1.dep_name = i2.dep_name);
+
+SELECT dep_name, ing_name, ing_price, store_name FROM store_ingr JOIN ingredient USING (ing_id) JOIN store USING (store_id);
+
+-- VIEW
