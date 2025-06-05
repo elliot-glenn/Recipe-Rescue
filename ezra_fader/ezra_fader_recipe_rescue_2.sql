@@ -33,8 +33,7 @@ SELECT * FROM v_store;
 
 -- BUILT IN
 SELECT ing_name AS 'Ingredient', CONCAT_WS(' ', 
-IF(vegan, 'Vegan,', ''), 
-IF(vegetarian, 'Vegetarian,', ''), 
+IF(vegetarian, IF(vegan, 'Vegan', 'Vegetarian'), ''), 
 IF(gluten_free, 'Gluten Free', '')) AS 'Dietary Restrictions' 
 FROM ingredient;
 
