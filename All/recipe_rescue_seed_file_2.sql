@@ -15,8 +15,32 @@ VALUES (12, "Yellow Onion", "Produce", true, true, true, 12.7); -- onion from wa
 ----------------------------------------
 -- UTENSIL --
 ----------------------------------------
+INSERT INTO utensil 
+VALUES (10, "Baking Tray");
 
+INSERT INTO utensil 
+VALUES (11, "Liquid measuring cup");
 
+INSERT INTO utensil 
+VALUES (12, "tin foil");
+
+INSERT INTO utensil 
+VALUES (13, "parchment paper");
+
+INSERT INTO utensil 
+VALUES (14, "stirring spoon");
+
+INSERT INTO utensil 
+VALUES (15, "saucepan");
+
+INSERT INTO utensil 
+VALUES (16, "frying pan");
+
+INSERT INTO utensil 
+VALUES (17, "stock pot");
+
+INSERT INTO utensil 
+VALUES (18, "colandar");
 
 ----------------------------------------
 -- RECIPE --
