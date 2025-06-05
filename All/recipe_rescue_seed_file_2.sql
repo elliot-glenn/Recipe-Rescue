@@ -27,7 +27,6 @@ VALUES (12, "Yellow Onion", "Produce", true, true, true, 12.7); -- onion from wa
 ----------------------------------------
 -- INGR_RECIPE --
 ----------------------------------------
-INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (3, 1, 0.4); -- Garlic into Pad See Ew, ~0.4 ounces 2 cloves of garlic
 INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (10, 0, 0.34); -- Chicken broth into Chicken Pot Pie ~0.34 ounces
 INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (12, 0, 12.7); -- whole onion in chicken pot pie
 
@@ -35,13 +34,13 @@ INSERT INTO ingr_recipe (ing_id, recipe_id, oz) VALUES (12, 0, 12.7); -- whole o
 ----------------------------------------
 -- STORE_INGR --
 ----------------------------------------
-INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 12, 0.66) -- walmart selling onions for 66 cents per
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (6, 12, 0.66); -- walmart selling onions for 66 cents per
 
 
 ----------------------------------------
 -- STORE_UTEN --
 ----------------------------------------
-
+INSERT INTO store_uten (store_id, uten_id, uten_price) VALUES (5, 0, 9.99); -- amazon knife
 
 
 ----------------------------------------

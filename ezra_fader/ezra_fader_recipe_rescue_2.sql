@@ -32,7 +32,11 @@ CREATE VIEW v_store AS (SELECT store_name AS 'Store', IFNULL(city, 'Online') AS 
 SELECT * FROM v_store;
 
 -- BUILT IN
-SELECT ing_name AS 'Ingredient starting with C' FROM ingredient WHERE LOWER(LEFT(ing_name, 1)) = 'c';
+SELECT ing_name AS 'Ingredient', CONCAT_WS(' ', 
+IF(vegan, 'Vegan,', ''), 
+IF(vegetarian, 'Vegetarian,', ''), 
+IF(gluten_free, 'Gluten Free', '')) AS 'Dietary Restrictions' 
+FROM ingredient;
 
 -- RELATIONAL SET
 SELECT COUNT(item) AS 'Total Items' FROM
