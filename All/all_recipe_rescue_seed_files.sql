@@ -166,6 +166,24 @@ INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetari
 VALUES (10, "Chicken Broth", "Soups", false, true, false, 32); -- 32 oz of broth chicken o organics
 INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
 VALUES (11, "Vegetable Stock Powder", "Seasoning", true, true, true, 5.9); -- 5.9 oz of massal vegetable bouillon powder
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (12, "Baking Powder", "Baking", true, true, true, 8.1); -- 8.1 oz of Clabber Girl Baking Powder
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (13, "Salt", "Seasoning", true, true, true, 26); -- 26 oz of Morton Salt Plain
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (14, "Frank's RedHot Sauce", "Seasoning", true, true, true, 12); -- 26 oz of Franks RedHot Sauce
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (15, "Brown Sugar", "Seasoning", False, true, true, 32); -- 2 lb of C&H Premium Pure Cane Light Brown Sugar Bag
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (16, "Blue Cheese", "Dairy", False, true, true, 5); -- 5 oz BelGioioso Blue Cheese Freshly Crumbled Cup
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (17, "Sour Cream", "Dairy", False, true, true, 16); -- 16 oz of Daisy Sour Cream Pure & Natural
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (18, "Mayonayse", "Dairy", False, true, true, 30); -- 30 oz of Best Foods Real Mayonnaise
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (19, "Lemon Juice", "Juice", True, true, true, 15); -- 15 oz of Lemon Juice
+INSERT INTO ingredient (ing_id, ing_name, dep_name, vegan, gluten_free, vegetarian, oz_per_unit)
+VALUES (20, "Pepper", "Seasoning", True, true, true, 1.5); -- 1.5 oz of McCormick Pure Ground Black Pepper 
 
 -- Store table entries
 INSERT INTO store
@@ -182,6 +200,8 @@ INSERT INTO store
 VALUES (00005, 'Amazon', NULL, NULL, NULL);
 INSERT INTO store
 VALUES (00006, 'Walmart', 1360, 'Center Dr', 'Medford');
+INSERT INTO store
+VALUES (00007, 'Safeway', 585, 'Siskiyou Blvd', 'Ashland');
 
 -- Utensil Entries
 INSERT INTO utensil (uten_id, uten_name)
@@ -441,6 +461,30 @@ INSERT INTO ingr_recipe
 VALUES (11, 000000, 0.333333);
 INSERT INTO ingr_recipe
 VALUES (9, 000000, 16);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (12, 000005, .83);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (13, 000005, 1.7); 
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (5, 000005, 2);  
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (14, 000005, 4);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (15, 000005, .5);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (16, 000005, 4);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (17, 000005, 4); 
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (18, 000005, 2);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (3, 000005, .2);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (9, 000005, 1);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (19, 000005, 1);
+INSERT INTO ingr_recipe (ing_id, recipe_id, oz) 
+VALUES (20, 000005, .001);
 
 
 -- store_ingr table entries
@@ -455,6 +499,16 @@ INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 8, 3.99); -- alb
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 9, 4.99); -- albertsons, whole milk 52 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (0, 10, 2.99); -- albertsons, chicken broth 32 oz
 INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (5, 11, 7.99); -- amazon, chicken broth 32 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 12, 2.99); -- safeway, Signature SELECT Baking Powder Double Acting 8.1 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 13, 2.29); -- safeway, Morton Salt Plain 26 oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 14, 2.29); -- safeway, Frank's RedHot Original Cayenne Pepper Hot Sauce 12 Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 15, 4.29); -- safeway, C&H Premium Pure Cane Light Brown Sugar Bag 32 Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 16, 4.99); -- safeway, BelGioioso Blue Cheese Freshly Crumbled Cup 5 Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 17, 2.79); -- Daisy Sour Cream Pure & Natural - 16 Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 18, 5.99); -- Best Foods Real Mayonnaise - 30 Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 19, 2.99); -- Signature SELECT Lemon Juice - 15 Fl. Oz
+INSERT INTO store_ingr (store_id, ing_id, ing_price) VALUES (7, 20, 1.99); -- Signature SELECT Black Pepper Ground - 1.5 Oz
+
 
 
 
